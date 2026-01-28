@@ -13,6 +13,9 @@ set(SOURCES
     main.cpp
     src/point.cpp
     src/form.cpp
+    src/cercle.cpp
+    src/rectangle.cpp
+    src/listeForm.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})

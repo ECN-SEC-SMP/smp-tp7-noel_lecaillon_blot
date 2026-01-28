@@ -12,7 +12,7 @@ public:
     Point(int,int);
     Point(Point const&);
 
-    ~Point();
+    ~Point()=default;
 
     void translater(Point p);
     void translater(int,int);

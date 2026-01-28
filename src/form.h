@@ -4,7 +4,7 @@
 #include <iostream>
 #include "point.h"
 
-class Form
+class Form 
 {
 private:
     Point p;
