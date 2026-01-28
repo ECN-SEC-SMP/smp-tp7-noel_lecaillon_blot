@@ -16,12 +16,23 @@ Point::Point(Point const & p)
 
 void Point::translater(Point p)
 {
-    this->x = p.x;
-    this->y = p.y;
+    *this += p;
 }
 
 void Point::translater(int x, int y)
 {
-    this->x = x;
-    this->y = y;
+    this->x += x;
+    this->y += y;
+}
+
+std::ostream& operator<<(std::ostream& os, const Point& p)
+{
+    os <<"X : "<<p.getX() <<"\nY : " <<p.getY() << std::endl;
+    return os;
+}
+
+void Point::operator+=(Point const& p)
+{
+    this->x += p.x;
+    this->y += p.y;
 }

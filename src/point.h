@@ -1,6 +1,8 @@
 #ifndef POINT_H
 #define POINT_H
 
+#include <iostream>
+
 class Point
 {
 private:
@@ -15,15 +17,17 @@ public:
     void translater(Point p);
     void translater(int,int);
 
-    int getX(){return this->x;}
-    int getY(){return this->y;}
+    int getX() const {return this->x;}
+    int getY() const {return this->y;}
 
     void setX(int x) {this->x = x;}
     void setY(int y) {this->y = y;}
 
+
+    void operator+=(Point const& p);
 };
 
-
+std::ostream& operator<<(std::ostream& os, const Point& p);
 
 
 

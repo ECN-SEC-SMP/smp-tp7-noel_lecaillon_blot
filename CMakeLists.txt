@@ -12,6 +12,7 @@ include_directories(${CMAKE_SOURCE_DIR}/src)
 set(SOURCES
     main.cpp
     src/point.cpp
+    src/form.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
