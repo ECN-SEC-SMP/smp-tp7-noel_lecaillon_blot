@@ -14,6 +14,7 @@ set(SOURCES
     src/point.cpp
     src/form.cpp
     src/cercle.cpp
+    src/carre.cpp
     src/rectangle.cpp
     src/listeForm.cpp
 )
